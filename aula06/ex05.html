@@ -16,12 +16,14 @@
     <h1>Iniciando Estudos DOM</h1>
     <p>Aqui vai os resultados</p>
     <p>Aprendendo a usar Javascript com <Strong>DOM</Strong></p>
-    <div>Clique em mim </div>
+    <div id='msg'>Clique em mim </div>
 
     <script>
         var p1 = window.document.getElementsByTagName("p")[0] // seleciona o primeiro p
        // var p1 = window.document.getElementsByTagName("p")[1] // seleciona o segundo p
         window.document.write('Está escrito assim: ' +p1.innerText)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
     </script>
 </body>
 </html>
